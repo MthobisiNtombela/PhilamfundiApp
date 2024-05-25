@@ -1,0 +1,39 @@
+<ion-content>
+  <div class="notification-bell" [routerLink]="['/notification']">
+    <ion-icon name="notifications-outline"></ion-icon>
+  </div>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="home-outline"  [routerLink]="['/login']"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="appointments">
+        <ion-icon name="calendar-outline" [routerLink]="['/appointment']"></ion-icon>
+        <ion-label>Appointments</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="philamfundiAI" class="center-tab">
+        <ion-icon src="assets/icon/philamfundiAI.svg"  [routerLink]="['/PhilamfundiAI']"></ion-icon>
+        <ion-label>PhilamfundiAI</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="medrefill">
+        <ion-icon name="medkit-outline" [routerLink]="['/medrefill']"></ion-icon>
+        <ion-label>Med-Refill</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="advertisement">
+        <ion-icon name="megaphone-outline" [routerLink]="['/advertisement']"></ion-icon>
+        <ion-label>Anouncements</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  <div class="profile-section">
+    <!-- Upload profile picture icon -->
+    <ion-icon name="person-circle-outline" class="upload-icon" [routerLink]="['/my-profile']"></ion-icon>
+    <!-- Display greeting with username -->
+    <p>Hello <!--{{ username }}--></p>
+  </div>
+</ion-content>

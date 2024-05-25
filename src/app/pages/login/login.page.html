@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true" style="background-color:#ffffff">
+  <div class="header">
+    <div class="title">Welcome back</div>
+    <p class="subTitle">Sign in to access your account</p>
+  </div>
+  <form>
+    <div class="ion-padding">
+      <ion-item>
+        <ion-input placeholder="username" class="input"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="password" class="input"></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-label>User Role</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="patient">Patient</ion-select-option>
+          <ion-select-option value="medicalStaff">Medical Staff</ion-select-option>
+          <ion-select-option value="receptionist">Receptionist</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <div class="forgotPassword">
+        <a style="color:#ffc33f" [routerLink]="['/reset-password']">Forgot password?</a>
+      </div>
+      <div class="signupLink">
+        <p>Don't have an account? <a style="color:#ffc33f" [routerLink]="['/signup']">SignUp now</a></p>
+      </div>
+    </div>
+    <ion-fab vertical="bottom" horizontal="end">
+      <ion-fab-button [routerLink]="['/home']">
+        <ion-icon name="chevron-forward"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </form>
+</ion-content>
+

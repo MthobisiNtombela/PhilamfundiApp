@@ -1,0 +1,21 @@
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  
+  ion-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  ion-button {
+    margin-right: 8px;
+  }
+  

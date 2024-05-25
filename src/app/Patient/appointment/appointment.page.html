@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Appointments
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+     <!-- <ion-card-title>View Appointments</ion-card-title>
+      <ion-card-subtitle>Consult a doctor from the comfort of your home.</ion-card-subtitle>-->
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="block" color="primary" [routerLink]="['/view-appointment']">View Appointments</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-button expand="block" color="primary" [routerLink]="['/bookNewAppointment']">
+              Book an appointment
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

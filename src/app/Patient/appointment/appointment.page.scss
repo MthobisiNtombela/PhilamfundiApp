@@ -1,0 +1,84 @@
+/* Header and Toolbar Styling */
+ion-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  ion-toolbar {
+    --background: #ffffff;
+    --color: #000000;
+    --min-height: 56px;
+    --padding-start: 10px;
+  }
+  
+  ion-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Back Button Styling */
+  ion-back-button {
+    --color: #ff3d00;
+    --icon-color: #ff3d00;
+    font-size: 24px;
+  }
+  
+  /* General Content Padding */
+  ion-content.ion-padding {
+    padding: 16px;
+  }
+  
+  /* Styling for ion-card */
+  ion-card {
+    margin-bottom: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Header Styling */
+  ion-card-header {
+    --background: #f8f8f8;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Card Content Styling */
+  ion-card-content {
+    padding: 16px;
+  }
+  
+  /* Styling for ion-buttons */
+  ion-button {
+    --background: #ff3d00;
+    --background-activated: #e63900;
+    --background-focused: #ff3d00;
+    --background-hover: #ff3d00;
+    --color: #ffffff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Grid Styling */
+  ion-grid {
+    margin-top: 16px;
+  }
+  
+  ion-row {
+    --ion-grid-column-padding: 8px;
+  }
+  
+  ion-col {
+    padding: 0;
+  }
+  
+  /* Specific Button Styling Inside Cards */
+  ion-card ion-button {
+    --background: #ff3d00;
+    --color: #ffffff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

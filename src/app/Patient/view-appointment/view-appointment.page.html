@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>View Appointments</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/appointment"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">View Appointments</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-segment value="all" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="all">
+      <ion-label>All</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="today">
+      <ion-label>Today's</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="appointment-grid">
+    <ion-card *ngFor="let appointment of filteredAppointments">
+      <ion-card-header>
+        <ion-card-title>{{ appointment.name }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{ appointment.location }}</p>
+        <p>{{ appointment.date | date: 'MMM dd, yyyy' }} {{ appointment.time }}</p>
+        <div class="button-container">
+          <ion-button (click)="cancelAppointment(appointment)" fill="outline" >Cancel</ion-button>
+          <ion-button (click)="rescheduleAppointment(appointment)" fill="outline" [routerLink]="['/bookNewAppointment']">Reschedule</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

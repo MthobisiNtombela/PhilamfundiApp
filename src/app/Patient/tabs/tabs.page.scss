@@ -1,0 +1,75 @@
+ion-tab-bar {
+    background-color: #ffffff;
+  }
+  
+  ion-tab-button {
+    --color: #000000;
+    --color-selected: #ff3d00;
+  }
+  
+  .center-tab {
+    margin-top: -20px; /* Adjusted for better placement */
+    background: #ff3d00;
+    border-radius: 50%;
+    padding: 14px 20px; /* Adjusted padding for better fit */
+    --color-selected: #ffffff;
+    --color: #ffffff;
+    font-size: 12px; /* Ensured readable font size */
+    font-weight: bold; /* Increased font weight for better readability */
+  }
+  
+  .center-tab ion-icon {
+    font-size: 24px; /* Adjusted icon size */
+  }
+  
+  ion-label {
+    font-size: 10px; /* Adjusted label font size for other tabs */
+  }
+  /* Notification Bell Icon */
+.notification-bell {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Ensure it is on top */
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .notification-bell ion-icon {
+    font-size: 24px;
+    color: #ff3d00; /* Adjust the color to match your theme */
+  }
+  
+  .notification-bell:hover {
+    cursor: pointer;
+    background-color: #ff3d00;
+    color: #ffffff;
+  }
+  
+  .notification-bell ion-icon:hover {
+    color: #ffffff;
+  }
+ /* Profile Section */
+.profile-section {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .upload-icon {
+    font-size: 24px; /* Adjusted icon size */
+    color: #ff3d00; /* Adjust the color to match your theme */
+    margin-right: 10px; /* Adjusted spacing */
+  }
+  
+  .profile-section p {
+    font-size: 14px; /* Adjusted font size */
+    color: #000000; /* Adjust the color to match your theme */
+  }
+  
+  
